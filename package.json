@@ -1,0 +1,33 @@
+{
+  "name": "taskmanager",
+  "version": "1.0.0",
+  "description": "Simple nodejs task-manager",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/armanmartirosyan/taskmanager.git"
+  },
+  "author": "Arman",
+  "license": "MIT",
+  "keywords": [
+    "task-manager",
+    "expressjs",
+    "mysql2",
+    "nodejs"
+  ],
+  "homepage": "https://github.com/armanmartirosyan/taskmanager#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.9.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
