@@ -1,11 +1,12 @@
 {
   "name": "taskmanager",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Simple nodejs task-manager",
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "npx knex migrate:latest --knexfile ./config/knexfile.js",
+    "rollback": "npx knex migrate:rollback --knexfile ./config/knexfile.js",
     "start": "nodemon app.js"
   },
   "repository": {
@@ -24,6 +25,7 @@
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "knex": "^3.1.0",
     "morgan": "^1.10.0",
     "mysql2": "^3.9.3"
   },
