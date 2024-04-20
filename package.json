@@ -7,7 +7,8 @@
   "scripts": {
     "migrate": "npx knex migrate:latest --knexfile ./config/knexfile.js",
     "rollback": "npx knex migrate:rollback --knexfile ./config/knexfile.js",
-    "start": "nodemon app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
