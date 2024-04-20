@@ -3,9 +3,9 @@
  * @returns { Promise<void> }
  */
 export function up(knex) {
-    return knex.schema.createTable('tasks', function(table) {
+	return knex.schema.createTable('tasks', function(table) {
 		table.increments('id').primary();
-		table.string('name');
+		table.string('name', 255).notNullable();
 		table.boolean('completed').defaultTo(false);
 	  });
 }

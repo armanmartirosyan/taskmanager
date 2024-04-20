@@ -1,6 +1,6 @@
 {
   "name": "taskmanager",
-  "version": "1.0.2",
+  "version": "1.2.1",
   "description": "Simple nodejs task-manager",
   "main": "app.js",
   "type": "module",
