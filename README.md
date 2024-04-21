@@ -19,7 +19,7 @@ Express.js and MySQL-based Task Manager: Simplify task management with user-frie
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/armanmartirosyan/taskmanager.git
+   git clone git@github.com:armanmartirosyan/taskmanager.git
    ```
 
 2. **Install dependencies:**
