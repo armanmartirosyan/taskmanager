@@ -2,10 +2,10 @@ import dotenv from "dotenv";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-dotenv.config();
-
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
+const result = dotenv.config({ path: path.resolve(__dirname, '../.env') });
 
 export default {
   development: {
@@ -13,7 +13,7 @@ export default {
 	connection: {
 	  host: process.env.MYSQL_HOST || 'localhost',
 	  user: process.env.MYSQL_USER || 'root',
-	  password: process.env.MYSQL_PASS || 'root',
+	  password: process.env.MYSQL_PASS || 'himynameisArman3.',
 	  database: process.env.MYSQL_DATABASE || 'taskmanager',
 	},
 	migrations: {
